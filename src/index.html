@@ -7,19 +7,44 @@
         <title>NewsPortal</title>
     </head>
     <body>
-        <header>
-            <h1>News Portal</h1>
-        </header>
         <main>
+            <h1 class="header">News Portal</h1>
+
             <div class="sources buttons"></div>
             <div class="news"></div>
         </main>
         <footer>
-            <p class="copyright">
-                Copyright <a href="https://newsapi.org">NewsAPI</a>
-            </p>
+            <div class="contacts">
+                <ul class="contacts-list">
+                    <li class="contacts-list__item">
+                        <a href="https://github.com/Nexuslolz" class="contacts-list__link" target="_blank">
+                            <img
+                                src="https://raw.githubusercontent.com/Nexuslolz/news-JS/f68edb08aa3354ee99da68b6afcf8ee6f067c99c/assets/GitHub.svg"
+                                alt="my github"
+                                class="contact-list__img gh-img"
+                                width="50"
+                                height="50"
+                            />
+                        </a>
+                    </li>
+                    <li class="contacts-list__item">
+                        <a href="https://rs.school/js/" class="contacts-list__link" target="_blank">
+                            <img
+                                src="https://raw.githubusercontent.com/Nexuslolz/news-JS/f68edb08aa3354ee99da68b6afcf8ee6f067c99c/assets/rs_school_js-logo.svg"
+                                alt="rsschool"
+                                class="contact-list__img logo-img"
+                                id="rsschool"
+                                width="50"
+                                height="50"
+                            />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="page-footer__contacts">
+                <div class="page-footer__text">© 2022</div>
+            </div>
         </footer>
-
         <template id="sourceItemTemp">
             <div class="source__item">
                 <span class="source__item-name"></span>
