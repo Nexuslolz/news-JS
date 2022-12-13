@@ -1,35 +1,84 @@
 body {
+    height: 98vh;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     color: #fff;
     background: #17181c;
     font-family: sans-serif;
+    margin: 0 auto;
 }
 
-header {
+.header {
+    font-size: 40px;
+    font-weight: 800;
     padding: 10px 30px;
 }
 
-header h1 {
-    font-size: 40px;
-    font-weight: 800;
-}
-
 footer {
+    width: 100%;
     height: 100px;
     display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    margin: 0 auto;
+    padding: 1% 5% 0;
 }
+
+.page-footer__text {
+    width: max-content;
+}
+
 footer .copyright {
     font-size: 14px;
     color: #333;
     text-align: center;
 }
+
 footer .copyright a {
     color: #444;
 }
+
 footer .copyright a:hover {
     color: #555;
 }
+
 footer .copyright:before {
     content: '©';
+}
+
+.contacts {
+    width: 100%;
+}
+
+.contacts-list {
+    width: 20vw;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.contacts-list__item {
+    list-style: none;
+    margin-right: 3em;
+    transition: 0.15s;
+}
+
+.contacts-list__item:hover {
+    transition: 0.15s;
+    transform: scale(1.15);
+}
+
+.contact-list__img {
+    width: 1.8vw;
+    transition: 0.15s;
+    min-width: 20px;
+}
+
+.contacts-list__link:hover.contact-list__img {
+    transform: scale(1.15);
+    transition: 0.15s;
 }

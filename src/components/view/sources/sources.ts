@@ -1,8 +1,8 @@
 import './sources.css';
-import Data from '../dataType';
+import DataSource from '../dataSource';
 
 class Sources {
-    draw(data: Data): void {
+    draw(data: DataSource): void {
         const fragment = document.createDocumentFragment() as DocumentFragment;
         const sourceItemTemp = document.querySelector('#sourceItemTemp') as HTMLTemplateElement;
 
