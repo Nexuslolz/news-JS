@@ -4,7 +4,7 @@ import AppLoader from './appLoader';
 type Callback<T> = (data?: T) => void;
 
 class AppController extends AppLoader {
-    getSources(callback: Callback<Data>): void {
+    public getSources(callback: Callback<Data>): void {
         super.getResp(
             {
                 endpoint: 'sources',
@@ -13,7 +13,7 @@ class AppController extends AppLoader {
         );
     }
 
-    getNews(e: MouseEvent, callback: Callback<Data>): void {
+    public getNews(e: MouseEvent, callback: Callback<Data>): void {
         let target = e.target as HTMLElement;
         const newsContainer = e.currentTarget as HTMLElement;
 
